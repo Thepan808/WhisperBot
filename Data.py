@@ -25,13 +25,13 @@ By 『♚•꣣𝑻⃯̭꣣𝒉⃯̭꣣𝒆⃯̭꣣ ┼ ͓꣣𝑷⃯̭͓꣣𝒂�
     # Rest Buttons
     buttons = [
         [
-            InlineKeyboardButton("🔒 Envie um sussurro 🔒", switch_inline_query="")
+            InlineKeyboardButton("🔒 Envie uma mensagem privada 🔒", switch_inline_query="")
         ],
         [
             InlineKeyboardButton("Como usar ❔", callback_data="help"),
             InlineKeyboardButton("🤨 Sobre 🤨", callback_data="about")
         ],
-        [InlineKeyboardButton("⨣ Criador pae ⨣", url="https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx")],
+        [InlineKeyboardButton("⨣ Criador ⨣", url="https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx")],
         [InlineKeyboardButton("⚙ Grupo de Suporte ⚙", url="https://t.me/blazer808_Stay")],
     ]
 
