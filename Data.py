@@ -4,57 +4,55 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}.
-Welcome to {}
+Olá usuário {}.
+Bem vindo ao {}
 
-I am the Master of Whisperers (like Varys in Game of Thrones).
+Eu sou o Mestre dos Sussurradores (como Varys em Game of Thron). 👻🤨 Maconha doida pow tlgd? Kjjkk, brinks!
 
-You can use me to send whispers to your friend in groups and channels (even if I'm not there).
-Only that friend and you will be able to read the message even though others are in same group. 
+Você pode me usar para mandar mensagem secretamente para alguém! Com id ou username em grupos e canais.
 
-To see how to use me press 'How to Use' below.
 
-By @StarkBots
+Para ver como funciona, aperte 'Como usar' abaixo..
+
+By 『♚•꣣𝑻⃯̭꣣𝒉⃯̭꣣𝒆⃯̭꣣ ┼ ͓꣣𝑷⃯̭͓꣣𝒂⃯̭꣣𝒏⃯̭꣣𝒅⃯̭͓꣣𝒂⃯̭꣣•♚』〖⭟ ˢ͢ᵗ͢ᵃ͢ᶠ͢ᶠ ⃪ 〗
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")],
+        [InlineKeyboardButton("🔒 Envie um sussurro 🔒", switch_inline_query="")],
+        [InlineKeyboardButton(text="🏠 Voltar ao inicial 🏠", callback_data="home")],
     ]
     # Rest Buttons
     buttons = [
         [
-            InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")
+            InlineKeyboardButton("🔒 Envie um sussurro 🔒", switch_inline_query="")
         ],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("Como usar ❔", callback_data="help"),
+            InlineKeyboardButton("🎪 Sobre 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
-        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/StarkBotsChat")],
+        [InlineKeyboardButton("⨣ Criador pae ⨣", url="https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx")],
+        [InlineKeyboardButton("⚙ Grupo de Suporte ⚙", url="https://t.me/blazer808_Stay")],
     ]
 
     # Help Message
     HELP = """
-Just type the message in below format in any chat.
+Basta digitar a mensagem abaixo do formato em qualquer bate-papo..
 
-`@WhisperStarkBot your_message friend_username/id`
+`@panbbot Sua Mensagem Username da pessoa ou/id`
     """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+**Sobre esse bot** 
 
-Bot created by @StarkBots
+Bot criado pelo @xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/WhisperBot)
+Inspirado pelo : nnbbot ( Rei das mensagens secretas ) 
 
-Inspired By : nnbbot
+Estrutura : [Pyrogram](docs.pyrogram.org)
 
-Framework : [Pyrogram](docs.pyrogram.org)
+Linguagem : [Python](www.python.org)
 
-Language : [Python](www.python.org)
-
-Developer : @StarkProgrammer
+Desenvolvedor : @xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx
     """
