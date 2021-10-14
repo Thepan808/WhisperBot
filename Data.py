@@ -7,7 +7,7 @@ class Data:
 Olá usuário {}.
 Bem vindo ao {}
 
-Eu sou o Mestre dos Sussurradores (como Varys em Game of Thron). 👻🤨 Maconha doida pow tlgd? Kjjkk, brinks!
+Eu sou o " Mini Mestre dos Sussurradores ". 👻🤨 Maconha doida pow tlgd? Kjjkk, brinks!
 
 Você pode me usar para mandar mensagem secretamente para alguém! Com id ou username em grupos e canais.
 
@@ -29,7 +29,7 @@ By 『♚•꣣𝑻⃯̭꣣𝒉⃯̭꣣𝒆⃯̭꣣ ┼ ͓꣣𝑷⃯̭͓꣣𝒂�
         ],
         [
             InlineKeyboardButton("Como usar ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 Sobre 🎪", callback_data="about")
+            InlineKeyboardButton("🤨 Sobre 🤨", callback_data="about")
         ],
         [InlineKeyboardButton("⨣ Criador pae ⨣", url="https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx")],
         [InlineKeyboardButton("⚙ Grupo de Suporte ⚙", url="https://t.me/blazer808_Stay")],
