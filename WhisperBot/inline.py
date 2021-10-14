@@ -73,14 +73,14 @@ async def previous_target(sender):
             name = first_name + last_name
         except KeyError:
             name = first_name
-        text1 = f"Uma mensagem privada para {name}"
-        text2 = "Só ele / ela pode abri-lo essa mensagem."
+        text1 = f"⚠ Uma mensagem privada para {name}"
+        text2 = "🛂 Só ele / ela pode abri-lo essa mensagem."
         mention = f"[{name}](tg://user?id={receiver})"
         results = [
               InlineQueryResultArticle(
                   title=text1,
                   input_message_content=InputTextMessageContent(
-                      f"Uma mensagem privada para {mention}" + " " + text2),
+                      f"🛃 Uma mensagem privada para {mention}" + " " + text2),
                   url="https://t.me/panbbot",
                   description=text2,
                   thumb_url="https://telegra.ph/file/70ac8698bfa9843c56335.jpg",
@@ -110,7 +110,7 @@ async def answer(bot: Client, query):
     if query.query == "":
         await query.answer(
             results=main,
-            switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
+            switch_pm_text="🔒 Aprenda a enviar mensagens privadas",
             switch_pm_parameter="start"
         )
     elif len(query_list) == 1:
@@ -118,7 +118,7 @@ async def answer(bot: Client, query):
         results = await previous_target(sender)
         await query.answer(
             results,
-            switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
+            switch_pm_text="🔒 Aprenda a enviar mensagens privadas",
             switch_pm_parameter="start"
         )
     elif len(query_list) >= 2:
@@ -132,7 +132,7 @@ async def answer(bot: Client, query):
             results = await previous_target(sender)
             await query.answer(
                 results,
-                switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
+                switch_pm_text="🔒 Aprenda a enviar mensagens privadas",
                 switch_pm_parameter="start"
             )
             return
@@ -145,8 +145,8 @@ async def answer(bot: Client, query):
                 name = target_user.first_name + target_user.last_name
             else:
                 name = target_user.first_name
-            text1 = f"Uma mensagem privada para {name}"
-            text2 = "Só ele / ela pode abri-lo."
+            text1 = f"🛂 Uma mensagem privada para {name}"
+            text2 = "⚠ Só ele / ela pode abri-lo."
             await query.answer(
                 results=[
                     InlineQueryResultArticle(
@@ -167,7 +167,7 @@ async def answer(bot: Client, query):
                         ),
                     )
                 ],
-                switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
+                switch_pm_text="🔒 Aprenda a enviar mensagens privadas",
                 switch_pm_parameter="start"
             )
             await check_for_users(receiver)
@@ -176,7 +176,7 @@ async def answer(bot: Client, query):
             results = await previous_target(sender)
             await query.answer(
                 results,
-                switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
+                switch_pm_text="🔒 Aprenda a enviar mensagens privadas",
                 switch_pm_parameter="start"
             )
     await check_for_users(sender)
