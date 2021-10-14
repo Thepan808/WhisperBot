@@ -18,7 +18,7 @@ from WhisperBot.bot_users import check_for_users
 main = [
     InlineQueryResultArticle(
         title="panbbot",
-        input_message_content=InputTextMessageContent("Write Target User's @username or id at the end of your message."),
+        input_message_content=InputTextMessageContent("Escreva o @username ou ID do usuário do destino no final da sua mensagem."),
         url="https://t.me/panbbot",
         description="Escreva @username ou ID do usuário do destino no final da sua mensagem.",
         thumb_url="https://telegra.ph/file/70ac8698bfa9843c56335.jpg",
@@ -73,14 +73,14 @@ async def previous_target(sender):
             name = first_name + last_name
         except KeyError:
             name = first_name
-        text1 = f"Uma mensagem sussurrada para {name}"
+        text1 = f"Uma mensagem privada para {name}"
         text2 = "Só ele / ela pode abri-lo essa mensagem."
         mention = f"[{name}](tg://user?id={receiver})"
         results = [
               InlineQueryResultArticle(
                   title=text1,
                   input_message_content=InputTextMessageContent(
-                      f"Uma mensagem sussurrada para {mention}" + " " + text2),
+                      f"Uma mensagem privada para {mention}" + " " + text2),
                   url="https://t.me/panbbot",
                   description=text2,
                   thumb_url="https://telegra.ph/file/70ac8698bfa9843c56335.jpg",
@@ -145,7 +145,7 @@ async def answer(bot: Client, query):
                 name = target_user.first_name + target_user.last_name
             else:
                 name = target_user.first_name
-            text1 = f"Uma mensagem sussurrada para {name}"
+            text1 = f"Uma mensagem privada para {name}"
             text2 = "Só ele / ela pode abri-lo."
             await query.answer(
                 results=[
