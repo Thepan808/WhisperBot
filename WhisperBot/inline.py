@@ -17,16 +17,16 @@ from WhisperBot.bot_users import check_for_users
 
 main = [
     InlineQueryResultArticle(
-        title="Whisper Bot",
+        title="panbbot",
         input_message_content=InputTextMessageContent("Write Target User's @username or id at the end of your message."),
-        url="https://t.me/StarkBots",
-        description="Write Target User's @username or id at the end of your message.",
-        thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+        url="https://t.me/panbbot",
+        description="Escreva @username ou ID do usuário do destino no final da sua mensagem.",
+        thumb_url="https://telegra.ph/file/70ac8698bfa9843c56335.jpg",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Learn More", url="https://t.me/WhisperStarkBot?start=start")],
-                [InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")],
-                [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")]
+                [InlineKeyboardButton("Saber mais", url="https://t.me/panbbot?start=start")],
+                [InlineKeyboardButton("🔒 Enviar o sussurro 🔒", switch_inline_query="")],
+                [InlineKeyboardButton("♥ Criador ♥", url="https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx")]
             ]
         ),
     )
@@ -73,22 +73,22 @@ async def previous_target(sender):
             name = first_name + last_name
         except KeyError:
             name = first_name
-        text1 = f"A whisper message to {name}"
-        text2 = "Only he/she can open it."
+        text1 = f"Uma mensagem sussurrada para {name}"
+        text2 = "Só ele / ela pode abri-lo essa mensagem."
         mention = f"[{name}](tg://user?id={receiver})"
         results = [
               InlineQueryResultArticle(
                   title=text1,
                   input_message_content=InputTextMessageContent(
-                      f"A whisper message to {mention}" + " " + text2),
-                  url="https://t.me/StarkBots",
+                      f"Uma mensagem sussurrada para {mention}" + " " + text2),
+                  url="https://t.me/panbbot",
                   description=text2,
-                  thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+                  thumb_url="https://telegra.ph/file/70ac8698bfa9843c56335.jpg",
                   reply_markup=InlineKeyboardMarkup(
                       [
                           [
                               InlineKeyboardButton(
-                                  "🔐 Show Message 🔐",
+                                  "🔐 Mostrar mensagem 🔐",
                                   callback_data=str(data_list),
                               )
                           ]
@@ -110,7 +110,7 @@ async def answer(bot: Client, query):
     if query.query == "":
         await query.answer(
             results=main,
-            switch_pm_text="🔒 Learn How to send Whispers",
+            switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
             switch_pm_parameter="start"
         )
     elif len(query_list) == 1:
@@ -118,7 +118,7 @@ async def answer(bot: Client, query):
         results = await previous_target(sender)
         await query.answer(
             results,
-            switch_pm_text="🔒 Learn How to send Whispers",
+            switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
             switch_pm_parameter="start"
         )
     elif len(query_list) >= 2:
@@ -132,7 +132,7 @@ async def answer(bot: Client, query):
             results = await previous_target(sender)
             await query.answer(
                 results,
-                switch_pm_text="🔒 Learn How to send Whispers",
+                switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
                 switch_pm_parameter="start"
             )
             return
@@ -145,21 +145,21 @@ async def answer(bot: Client, query):
                 name = target_user.first_name + target_user.last_name
             else:
                 name = target_user.first_name
-            text1 = f"A whisper message to {name}"
-            text2 = "Only he/she can open it."
+            text1 = f"Uma mensagem sussurrada para {name}"
+            text2 = "Só ele / ela pode abri-lo."
             await query.answer(
                 results=[
                     InlineQueryResultArticle(
                         title=text1,
                         input_message_content=InputTextMessageContent(f"A whisper message to {target_user.mention}" + " " + text2),
-                        url="https://t.me/StarkBots",
+                        url="https://t.me/panbbot",
                         description=text2,
-                        thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+                        thumb_url="https://telegra.ph/file/70ac8698bfa9843c56335.jpg",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
                                     InlineKeyboardButton(
-                                        "🔐 Show Message 🔐",
+                                        "🔐 Mostrar mensagem 🔐",
                                         callback_data=str(data_list),
                                     )
                                 ]
@@ -167,7 +167,7 @@ async def answer(bot: Client, query):
                         ),
                     )
                 ],
-                switch_pm_text="🔒 Learn How to send Whispers",
+                switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
                 switch_pm_parameter="start"
             )
             await check_for_users(receiver)
@@ -176,7 +176,7 @@ async def answer(bot: Client, query):
             results = await previous_target(sender)
             await query.answer(
                 results,
-                switch_pm_text="🔒 Learn How to send Whispers",
+                switch_pm_text="🔒 Aprenda a enviar mensagens Whispers",
                 switch_pm_parameter="start"
             )
     await check_for_users(sender)
