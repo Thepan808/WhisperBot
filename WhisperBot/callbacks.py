@@ -53,5 +53,5 @@ async def _callbacks(bot, callback_query: CallbackQuery):
 				await callback_query.answer("Message Not Found", show_alert=True)
 			SESSION.commit()
 		else:
-			await callback_query.answer("Desculpe baianor, você não pode ver esta mensagem privada, porque isso não é para você... E então no caso, você perderia seu tempo vindo aqui? Deixe de curiosidade e vai lavar uma louça 🤡!", show_alert=True)
+			await callback_query.answer("Desculpe baianor, você não pode ver esta mensagem privada, porque isso não é para você... No caso, você perderia seu tempo vindo aqui? Deixe de curiosidade e vai lavar uma louça 🤡!", show_alert=True)
 		await check_for_users(data_list)
