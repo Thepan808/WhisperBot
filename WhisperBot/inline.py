@@ -146,12 +146,12 @@ async def answer(bot: Client, query):
             else:
                 name = target_user.first_name
             text1 = f"🛂 Uma mensagem privada para {name}"
-            text2 = "⚠ Só ele / ela pode abri-lo."
+            text2 = "🛂⚠ Só ele / ela pode abri-lo."
             await query.answer(
                 results=[
                     InlineQueryResultArticle(
                         title=text1,
-                        input_message_content=InputTextMessageContent(f"A whisper message to {target_user.mention}" + " " + text2),
+                        input_message_content=InputTextMessageContent(f"🛂 Uma mensagem privada para {target_user.mention}" + " " + text2),
                         url="https://t.me/panbbot",
                         description=text2,
                         thumb_url="https://telegra.ph/file/70ac8698bfa9843c56335.jpg",
