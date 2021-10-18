@@ -146,7 +146,7 @@ async def answer(bot: Client, query):
             else:
                 name = target_user.first_name
             text1 = f"🛂 Uma mensagem privada para {name}"
-            text2 = "🛂⚠ Só ele / ela pode abri-lo."
+            text2 = "♦⚠ Só ele / ela pode abri-lo."
             await query.answer(
                 results=[
                     InlineQueryResultArticle(
