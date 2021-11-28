@@ -31,7 +31,7 @@ By 『♚•꣣𝑻⃯̭꣣𝒉⃯̭꣣𝒆⃯̭꣣ ┼ ͓꣣𝑷⃯̭͓꣣𝒂�
             InlineKeyboardButton("Como usar ❔", callback_data="help"),
             InlineKeyboardButton("🤨 Sobre 🤨", callback_data="about")
         ],
-        [InlineKeyboardButton("♦ Criador ♦", url="https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx")],
+        [InlineKeyboardButton("♦ Criador ♦", url="https://t.me/The_Panda_Ofc")],
         [InlineKeyboardButton("⚙ Grupo de Suporte ⚙", url="https://t.me/blazer808_Stay")],
     ]
 
@@ -46,7 +46,7 @@ Basta digitar a mensagem abaixo do formato em qualquer bate-papo..
     ABOUT = """
 **Sobre esse bot** 
 
-Bot criado pelo @xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx
+Bot criado pelo @The_Panda_Ofc
 
 Inspirado pelo : nnbbot ( Rei das mensagens secretas ) 
 
@@ -54,5 +54,5 @@ Estrutura : [Pyrogram](docs.pyrogram.org)
 
 Linguagem : [Python](www.python.org)
 
-Desenvolvedor : @xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx
+Desenvolvedor : @The_Panda_Ofc
     """
